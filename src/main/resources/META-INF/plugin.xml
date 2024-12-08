@@ -1,0 +1,22 @@
+<idea-plugin>
+    <!-- 插件的基本信息 -->
+    <id>com.mryexiaoqiu.vcode</id>
+    <name>vcode 代码命名工具</name>
+    <description>它能够帮助你轻松为代码命名，提升代码的可读性和规范性。很多开发者在给代码命名时常常感到困扰，尤其是在英文水平有限的情况下，频繁地依赖翻译软件来寻找合适的命名。这个插件通过 AI 自动生成符合命名规范的名称，不仅避免了翻译软件带来的生硬翻译，还能提供更加自然、友好的命名建议。让你的代码命名更高效、更符合语境，提升整体开发体验。如何使用：先选中内容，然后按 control + shift + 1 即可生成命名</description>
+    <version>1.0.0</version>
+    <vendor email="2019873029@qq.com" url="https://github.com/pigjs/vcode">MrYeXiaoqiu</vendor>
+
+    <!-- 插件依赖 -->
+    <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="232" until-build="243.*" />
+    <!-- 插件提供的动作 -->
+    <actions>
+        <action id="com.mryexiaoqiu.vcode.ChineseToVariableAction"
+                class="com.mryexiaoqiu.vcode.ChineseToVariableAction"
+                text="Convert Chinese to Variable"
+                description="Convert Chinese text to camelCase variable name">
+            <keyboard-shortcut keymap="$default" first-keystroke="control shift 1"/>
+            />
+        </action>
+    </actions>
+</idea-plugin>
