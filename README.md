@@ -9,7 +9,7 @@
 
 win 用户：control + shift + 1
 
-mac 用户：control + shift + 1
+mac 用户：command + shift + 1
 
 即可生成命名。
 
