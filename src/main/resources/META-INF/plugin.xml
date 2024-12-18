@@ -1,15 +1,12 @@
 <idea-plugin>
-    <!-- 插件的基本信息 -->
     <id>com.mryexiaoqiu.vcode</id>
-    <name>vcode 代码命名工具</name>
+    <name>vcode</name>
     <description>This plugin helps you easily name your code, improving its readability and consistency. Many developers struggle with naming, especially when English proficiency is limited, often relying on translation tools to find suitable names. This plugin uses AI to automatically generate names that follow naming conventions, avoiding awkward translations from translation tools and providing more natural and friendly suggestions. Make your code naming more efficient and context-aware, enhancing the overall development experience. How to use: Select the content and press (mac: Command + Shift + 1,window: Control + Shift + 1) to generate a name.</description>
     <version>1.0.0</version>
-    <vendor email="2019873029@qq.com" url="https://github.com/pigjs/vcode">MrYeXiaoqiu</vendor>
+    <vendor email="2019873029@qq.com" url="https://github.com/pigjs/vcode-idea">MrYeXiaoqiu</vendor>
 
-    <!-- 插件依赖 -->
     <depends>com.intellij.modules.platform</depends>
     <idea-version since-build="232" until-build="243.*" />
-    <!-- 插件提供的动作 -->
     <actions>
         <action id="com.mryexiaoqiu.vcode.ChineseToVariableAction"
                 class="com.mryexiaoqiu.vcode.ChineseToVariableAction"
